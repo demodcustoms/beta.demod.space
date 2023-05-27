@@ -1,3 +1,4 @@
+// TYPEWRITER - Animacja
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -21,7 +22,7 @@ TxtType.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
     var that = this;
-    var delta = 100 - Math.random() * 50; // prędkość pisania (mniej = szybciej / więcej = wolniej)
+    var delta = 100 - Math.random() * 25; // prędkość pisania (mniej = szybciej / więcej = wolniej)
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -48,10 +49,71 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
 };
 
+document.addEventListener('DOMContentLoaded', function(event) {
+    var container = document.getElementById('text');
+    var text = container.textContent;
+    container.textContent = '';
+
+    var speed = 50;
+    var index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            container.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    typeWriter();
+});
+
+// Ustal domyślny tytuł
+var defaultTitle = 'demod.space';
+
+// Funkcja do zmiany tytułu, gdy użytkownik opuszcza stronę
+function changeTitleOnBlur() {
+  document.getElementById('custom-title').innerText = 'free candies';
+}
+
+// Dodaj obsługę zdarzenia blur
+window.addEventListener('blur', changeTitleOnBlur);
+
+// Dodaj obsługę zdarzenia focus, aby przywrócić domyślny tytuł po powrocie na stronę
+window.addEventListener('focus', function() {
+  document.getElementById('custom-title').innerText = defaultTitle;
+});
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.querySelector(".content").classList.add("overlay-active");
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    document.querySelector(".content").classList.remove("overlay-active");
+}
+
+// Tworzenie odtwarzacza YouTube
+var player;
+function onYouTubeIframeAPIReady() {
+player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    playerVars: {
+    listType: 'playlist',
+    list: 'PLF6k2F485Ufnx7eqhYxUBcc6tCuQ2Iiyj' // Zastąp PLAYLIST_ID identyfikatorem twojej playlisty YouTube
+    }
+});
+}
+
+
+function showDiscord() {
+    alert("Discord: demod#1312");
+  }
+
+function notWork() {
+    alert("Ta funkcja aktualnie nie działa!");
+}

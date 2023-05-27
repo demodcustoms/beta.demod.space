@@ -4,112 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
-    <link rel="shortcut icon" href="img/demod_space.png" type="image/x-icon">
-    <title>demod.space</title>
+    <link rel="shortcut icon" href="img/demod_space_mini.png" type="image/x-icon">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title id="custom-title">demod.space</title>
 </head>
 <body>
-    
-</body>
-</html>
-  <body>
 
-    <div class="wrapper-responsive">
+    <div class="body-mobile">   
 
-      <nav class="navbar-responsive">
-        <div class="navbar-responsive-logo">
-            <img src="img/demod_space_mini.png" alt="Logo">
-        </div>
-    
-        <div class="navbar-responsive-heading">
-            <h1>demod.space</h1>
-        </div>
-    
-        <div class="navbar-responsive-links">
-            <!--<a href="https://discord.gg/cocorp"><i class="fa-brands fa-discord"></i></a>-->
-            <a href="https://www.instagram.com/7demod7"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-      </nav>
+        <section class="main">
+            <div class="container-mobile">
+                <h1>
+                    <a href="store.html" class="page-transition-link"><div class="typewrite" id="underline" data-period="1500" data-type='["strona nie jest obsługiwana na telefonach.", "możesz wyświetlić zawartość strony na urządzeniach o szerokości conajmniej 768px"]'></div></a>
+                </h1>
+            </div>
+            <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                        <a href="#home">About</a>
+                        <a href="#about">Services</a>
+                        <a href="#gallery">Clients</a>
+                        <a href="#music">Contact</a>
+                    </div>
+                </div>
+            </div>
 
-      <div id="menu-responsive">
-        <h2>IMPORTANT!</h2>
-        <h1>
-          <div class="typewrite" id="underline" data-period="1500" data-type='["Currently this page is not available on small mobile devices...", "You can open this site when you got screen wide 768px or more (e.g. IPad or just PC)...", "Soon you will can read my page from every mobile device!" ]'>
-            <span class="wrap"></span>
-          </div>
-        </h1>
-      </div>
-
+            <div class="navbar">
+                <div class="nav-content">
+                    <div class="navbar-left">
+                    <span onclick="notWork()">&#9776;</span> <!-- <span onclick="openNav()">&#9776;</span> -->
+                    </div>
+                    <div class="navbar-center">
+                    <img src="img/demod_space_mini.png" alt="Logo">
+                    </div>
+                    <div class="navbar-right">
+                    <a href="#" onclick="showDiscord()"><i class="fab fa-discord"></i></a>                      
+                    <a href="https://instagram.com/7demod7"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div> 
+        </section>
     </div>
 
-    <div class="wrapper">
-
-      <nav class="navbar">
-
-        <div class="navbar-logo">
-            <img src="img/demod_space_mini.png" alt="Logo">
-        </div>
-    
-        <div class="navbar-heading">
-            <h1>demod.space</h1>
-        </div>
-    
-        <div class="navbar-links">
-            <a href="https://discord.gg/cocorp"><i class="fa-brands fa-discord"></i></a>
-            <a href="https://www.instagram.com/7demod7"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-
-      </nav>
-    
-      <section id="Home">
-        <div class="heading">
-          <h1>Strona główna</h1>
-          <p>#Home</p>
-        </div>
-        <div class="box-y">
-          <div class="box-x1">
-            <div class="box-img">
-              <img src="https://cdn.discordapp.com/attachments/904782222559678524/1103798881608802364/image.png">
+    <div class="body-pc">
+        <div class="navbar">
+            <div class="nav-content">
+                <div class="navbar-left">
+                <span onclick="notWork()">&#9776;</span> <!-- <span onclick="openNav()">&#9776;</span> -->
+                </div>
+                <div class="navbar-center">
+                <img src="img/demod_space_mini.png" alt="Logo">
+                </div>
+                <div class="navbar-right">
+                <a href="#" onclick="showDiscord()"><i class="fab fa-discord"></i></a>                      
+                <a href="https://instagram.com/7demod7"><i class="fa-brands fa-instagram"></i></a>
             </div>
-          </div>
-          <div class="box-x2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <div class="box-y">
-          <div class="box-x1">
-            <div class="box-img">
-              <img src="https://cdn.discordapp.com/attachments/904782222559678524/1103798881608802364/image.png">
+        </div>    
+          
+        <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="overlay-content">
+                    <a href="#home">About</a>
+                    <a href="#about">Services</a>
+                    <a href="#gallery">Clients</a>
+                    <a href="#music">Contact</a>
+                </div>
             </div>
-          </div>
-          <div class="box-x2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
         </div>
-        <div class="box-y">
-          <div class="box-x1">
-            <div class="box-img">
-              <img src="https://cdn.discordapp.com/attachments/904782222559678524/1103798881608802364/image.png">
+            
+        <div class="content">
+            
+            <section id="home" class="homepage">
+                <div class="heading">
+                    <h1>demod.space</h1>
+                </div>
+                <div class="sectionWrapper">
+                    <p class="inline-p">3D Modelling</p>
+                    <p class="inline-p">+</p>
+                    <p class="inline-p">Music engineer</p>
+                    <p class="inline-p">+</p>
+                    <p class="inline-p">FiveM (GTA5) developer</p>
+                    <p class="inline-p">+</p>
+                    <p class="inline-p">Programmer (HTML / CSS / PHP)</p>
+                </div>
+              </section>
+              
+              <section id="about" class="about">
+                <div class="heading">
+                    <h2>O mnie</h2>
+                </div>
+                <div class="sectionWrapper">
+                    <p>Potrafię robić wiele rzeczy, od grafiki komputerowej po muzykę jak i wizualizacje video.
+                        <br>Aktualnie niewiele wizualizacji wideo jest ode mnie wydanych publicznie bo się tego jeszcze tego uczę.
+                        <br>
+                    </p>
+                    <p>Muzyka:
+                        <ul>
+                            <li>- Beaty</li>
+                            <li>- Mix / Mastering</li>
+                        </ul>
+                    </p>
+                    <p>Programowanie:
+                        <ul>
+                            <li>- BackEnd (PHP, C++)</li>
+                            <li>- FrontEnd (HTML, CSS, JS)</li>
+                        </ul>
+                    </p>
+                    <p>3D:
+                        <ul>
+                            <li>- Realizacja animacji 3D</li>
+                            <li>- Tworzenie własnych modeli 3D</li>
+                            <li>- Edycja modeli 3D na zasadzie dodawania elementów bodykitu w pojazdach (GTA5)</li>
+                        </ul>
+                    </p>
+                </div>
+              </section>
+              
+              <section id="gallery" class="gallery">
+                <div class="heading">
+                    <h3>Galeria 3D</h3>
+                </div>
+                <div class="sectionWrapper">
+                    <div class="gallery">
+                        <img src="img/demod_space_mini.png" alt="Zdjęcie 1">
+                        <img src="img/demod_space_mini.png" alt="Zdjęcie 2">
+                        <img src="img/demod_space_mini.png" alt="Zdjęcie 3">
+                        <img src="img/demod_space_mini.png" alt="Zdjęcie 4">
+                        <img src="img/demod_space_mini.png" alt="Zdjęcie 5">
+                        <img src="img/demod_space_mini.png" alt="Zdjęcie 6">
+                      </div>
+                </div>
+              </section>
+              
+              <section id="music" class="music">
+                <div class="heading">
+                    <h4>Lista utworów</h4>
+                    <p>Każdy z tych utworów został wyprodukowany przeze mnie - najczęściej z kolaboracjami z innymi producentami.</p><br>
+                    <p>Jeżeli chcesz zobaczyć pełną playlistę utworów, na odtwarzaczu kliknij ikonkę playlisty w prawym górnym rogu.</p>
+                </div>
+                <div class="sectionWrapper">
+                    <div id="player"></div>
+                    <div class="ig">
+                        <a href="https://www.instagram.com/okekelvsn/">@okekelvsn</a></p>
+                        <a href="https://www.instagram.com/alienlingo/">@alienlingo</a></p>
+                        <a href="https://www.instagram.com/largefee/">@largefee</a></p>
+                        <a href="https://www.instagram.com/simplyantos/">@simplyantos</a></p><br>
+                        <a href="https://www.instagram.com/czopikapi/">special thanks to @czopikapi</a></p>
+                    </div>
+                </div>
+              </section>
             </div>
-          </div>
-          <div class="box-x2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="selectSection">
-        <h1>Wybierz sekcję, którą chcesz przeglądnąć.</h1>
-        <p>#selectSection</p>
-        <a href="muzyka.html"><button id="selectSectionBtn">Muzyka</button></a>
-        <a href="gta.html"><button id="selectSectionBtn">GTA5 / FiveM</button></a>
-        <a href="coding.html"><button id="selectSectionBtn">Programowanie</button></a>
-      </section>
-
     </div>
     
+        <video class="background-video" autoplay loop muted>
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+
+    <!--<script>
+        document.addEventListener("contextmenu", (event) => {
+         event.preventDefault();
+      });
+    </script>
+    <script>
+        document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.shiftKey && event.code === 'KeyC') {
+            event.preventDefault(); // Uniemożliwienie domyślnej akcji
+            console.log("Kombinacja klawiszy 'Ctrl+Shift+C' jest niedozwolona.");
+        }
+        });
+    </script>
+    <script>
+        function detectDevTools() {
+        const threshold = 160;
+        let widthThresholdExceeded = false;
+
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > threshold) {
+            widthThresholdExceeded = true;
+            }
+        });
+
+        window.addEventListener('devtoolschange', function(event) {
+            if (event.detail.isOpen || widthThresholdExceeded) {
+            window.location.href = 'https://www.example.com/';
+            }
+        });
+
+        if (typeof window.devtools === 'object' || widthThresholdExceeded) {
+            window.location.href = 'https://www.example.com/';
+        }
+        }
+
+        detectDevTools();
+    </script>-->
   </body>
-  
 </html>
