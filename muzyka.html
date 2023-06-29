@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/demod_space_mini.png" type="image/x-icon">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title id="custom-title">demod.space</title>
+</head>
+<body>
+
+    <div id="fullscreen-popup">
+        <h2>Włącz tryb pełnoekranowy dla najlepszych wrażeń!</h2>
+        <p>F11 na klawiaturze</p>
+    </div>
+
+    <div id="overlay-bg" class="overlay-bg"></div>
+
+    <div class="body-mobile">   
+        <section class="main">
+            <div class="container-mobile">
+                <img src="img/demod_space_mini.png" alt="Logo">
+                <h1>demod.space</h1>
+                <p>strona nie jest obsługiwana na telefonach,<br><br>możesz wyświetlić zawartość strony na urządzeniach o szerokości co najmniej 768px,<br></p>
+            </div>
+            <div class="navbar">
+                <div class="nav-content">
+                    <div class="navbar-left">
+                        <span onclick="openNav()">&#9776;</span>
+                    </div>
+                    <div class="navbar-center">
+                        <img src="img/demod_space_mini.png" alt="Logo">
+                    </div>
+                    <div class="navbar-right">
+                        <a href="#" onclick="openDiscord()"><i class="fab fa-discord"></i></a>                      
+                        <a href="https://instagram.com/7demod7" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </div>
+
+    <div class="body-pc">
+        <div class="navbar">
+            <div class="nav-content">
+                <div class="navbar-left">
+                    <span onclick="openNav()">&#9783;</span> <!-- <span onclick="openNav()">&#9783;</span> -->
+                </div>
+                <div class="navbar-center">
+                    <img src="img/demod_space_mini.png" alt="Logo">
+                </div>
+                <div class="navbar-right">
+                    <a href="#" onclick="openDiscord()"><i class="fab fa-discord"></i></a>                       
+                    <a href="https://instagram.com/7demod7" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#home">About</a>
+                <a href="#about">Services</a>
+                <a href="#gallery">Clients</a>
+                <a href="#music">Contact</a>
+            </div>
+        </div>
+        <div class="content">
+            
+            <section id="home" class="homepage">
+                <h1>demod.space</h1>
+                <p class="inline-p">Muzyka.</p>
+              </section>
+              
+              <section id="about" class="about">
+                <div class="heading">
+                    <h2>O mnie</h2>
+                </div>
+                <div class="sectionWrapper">
+                <p class="inline-p">Muzyką bawię się od ok. 2018 roku gdy robiłem bardziej House'ową muzykę.
+                    <br><br>Z czasem gust się zmieniał i w 2019r. postanowiłem robić muzykę trapową.
+                    <br><br>W 2021r. zacząłem robić tzw. SuperTrap / Darkspin. Zajawkę na tą generację złapałem od samego Redda, kolektywu DSPN oraz od polskich producentów t.j. <a href="https://instagram.com/s3twotay/">S3</a> i <a href="https://www.instagram.com/mstccmvne/">MSTCCMVNE</a>.
+                    <br><br>Na codzień z muzyką pracuję w programie FL Studio 21.
+                </p>
+                </div>
+              </section>
+              
+              <section id="music" class="music">
+                <div class="heading">
+                    <h4>Lista utworów</h4>
+                    <p>Każdy z tych utworów został wyprodukowany przeze mnie - najczęściej z kolaboracjami z innymi producentami.</p><br>
+                    <p>Jeżeli chcesz zobaczyć pełną playlistę utworów, na odtwarzaczu kliknij ikonkę playlisty w prawym górnym rogu.</p>
+                </div>
+                <br><br><br>
+                <div class="sectionWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLF6k2F485Ufnx7eqhYxUBcc6tCuQ2Iiyj" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="ig">
+                        <a href="https://www.instagram.com/okekelvsn/">@okekelvsn</a></p>
+                        <a href="https://www.instagram.com/alienlingo/">@alienlingo</a></p>
+                        <a href="https://www.instagram.com/largefee/">@largefee</a></p>
+                        <a href="https://www.instagram.com/simplyantos/">@simplyantos</a></p><br>
+                        special thanks to <a href="https://www.instagram.com/czopikapi/">@czopikapi</a></p>
+                    </div>
+                </div>
+              </section>
+            </div>
+    </div>
+    
+    <video class="background-video" autoplay loop muted>
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
