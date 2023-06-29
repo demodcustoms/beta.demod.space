@@ -85,35 +85,3 @@ window.addEventListener('blur', changeTitleOnExit);
 window.addEventListener('focus', () => {
     document.getElementById('custom-title').innerText = defaultTitle;
 });
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    var fullscreenPopup = document.getElementById("fullscreen-popup");
-    var overlayBg = document.getElementById("overlay-bg");
-
-    // Funkcja sprawdzająca, czy użytkownik znajduje się w trybie pełnoekranowym
-    function isFullscreen() {
-        return (
-            window.innerHeight === screen.height && 
-            window.innerWidth === screen.width
-        );
-    }
-
-    // Wyświetlanie lub ukrywanie popupu w zależności od trybu pełnoekranowego
-    function togglePopupBasedOnFullscreen() {
-        if (isFullscreen()) {
-            fullscreenPopup.classList.remove("active");
-            overlayBg.classList.remove("active");
-        } else {
-            fullscreenPopup.classList.add("active");
-            overlayBg.classList.add("active");
-        }
-    }
-
-    // Opóźnienie wywołania funkcji togglePopupBasedOnFullscreen po 2 sekundach
-    setTimeout(togglePopupBasedOnFullscreen, 500);
-
-    // Obsługa zdarzeń resize i scroll do monitorowania stanu trybu pełnoekranowego
-    window.addEventListener("resize", togglePopupBasedOnFullscreen);
-    window.addEventListener("scroll", togglePopupBasedOnFullscreen);
-});

@@ -557,54 +557,6 @@ iframe:hover {
     box-shadow: 0 0 20px rgb(204, 68, 0);
 }
 
-#fullscreen-popup {
-  position: fixed;
-  top: -200px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  background-color: #1a1a1abe;
-  backdrop-filter: blur(8px);
-  color: rgb(255, 243, 227);
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: top 0.5s ease-in-out;
-}
-#fullscreen-popup.active {
-  top: 50%;
-}
-#fullscreen-popup h2 {
-  margin: 0 0 10px;
-}
-#fullscreen-popup button {
-  font-family: Cutive Mono;
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.overlay-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.815);
-  backdrop-filter: blur(8px);
-  z-index: 9998;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
-}
-.overlay-bg.active {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease-in-out;
-}
-
 
 
 
