@@ -106,3 +106,13 @@ window.transitionToPage = function(href) {
 document.addEventListener('DOMContentLoaded', function(event) {
     document.querySelector('body').style.opacity = 1
 })
+
+
+
+
+window.addEventListener('scroll', function() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    var scrollRatio = (scrollTop / (scrollHeight - window.innerHeight)) * 100;
+    document.querySelector('#progressbar').style.width = scrollRatio + '%';
+  });
