@@ -71,6 +71,10 @@ function openDiscord() {
     window.open("https://discord.com/users/578649920022773763", "_blank");
 }
 
+function openInstagram() {
+    window.open("https://instagram.com/7demod7/", "_blank");
+}
+
 
 
 
@@ -85,3 +89,20 @@ window.addEventListener('blur', changeTitleOnExit);
 window.addEventListener('focus', () => {
     document.getElementById('custom-title').innerText = defaultTitle;
 });
+
+
+
+
+
+
+
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})

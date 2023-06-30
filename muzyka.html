@@ -14,7 +14,7 @@
     <title id="custom-title">demod.space</title>
 </head>
 <body>
-    <div class="body-mobile">   
+    <!--<div class="body-mobile">   
         <section class="main">
             <div class="container-mobile">
                 <img src="img/demod_space_mini.png" alt="Logo">
@@ -27,16 +27,25 @@
                         <span onclick="openNav()">&#9776;</span>
                     </div>
                     <div class="navbar-center">
-                        <img src="img/demod_space_mini.png" alt="Logo">
+                        <a href="index.html"><img src="img/demod_space_mini.png" alt="Logo"></a>
                     </div>
                     <div class="navbar-right">
                         <a href="#" onclick="openDiscord()"><i class="fab fa-discord"></i></a>                      
-                        <a href="https://instagram.com/7demod7" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" onclick="openInstagram()"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div> 
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a onclick="transitionToPage('index.html')">Strona główna</a>
+                    <a href="#about">O mnie</a>
+                    <a href="#music">Lista utworów</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </div>
         </section>
-    </div>
+    </div>-->
 
     <div class="body-pc">
         <div class="navbar">
@@ -45,21 +54,21 @@
                     <span onclick="openNav()">&#9783;</span> <!-- <span onclick="openNav()">&#9783;</span> -->
                 </div>
                 <div class="navbar-center">
-                    <img src="img/demod_space_mini.png" alt="Logo">
+                    <a onclick="transitionToPage('index.html')"><img src="img/demod_space_mini.png" alt="Logo"></a>
                 </div>
                 <div class="navbar-right">
                     <a href="#" onclick="openDiscord()"><i class="fab fa-discord"></i></a>                       
-                    <a href="https://instagram.com/7demod7" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" onclick="openInstagram()"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="#home">About</a>
-                <a href="#about">Services</a>
-                <a href="#gallery">Clients</a>
-                <a href="#music">Contact</a>
+                <a onclick="transitionToPage('index.html')">Strona główna</a>
+                <a href="#about">O mnie</a>
+                <a href="#music">Lista utworów</a>
+                <a href="#contact">Kontakt</a>
             </div>
         </div>
         <div class="content">
@@ -95,11 +104,27 @@
                         <a href="https://www.instagram.com/okekelvsn/">@okekelvsn</a></p>
                         <a href="https://www.instagram.com/alienlingo/">@alienlingo</a></p>
                         <a href="https://www.instagram.com/largefee/">@largefee</a></p>
-                        <a href="https://www.instagram.com/simplyantos/">@simplyantos</a></p><br>
-                        special thanks to <a href="https://www.instagram.com/czopikapi/">@czopikapi</a></p>
+                        <a href="https://www.instagram.com/simplyantos/">@simplyantos</a></p>
                     </div>
                 </div>
               </section>
+              <section id="contact" class="contact">
+                <div class="heading">
+                    <h2>Kontakt</h2>
+                    <p class="inline-p">Możliwości skontaktowania się ze mną:</p>
+                </div>
+                <div class="sectionWrapper">
+                    <div class="contactBox">
+                        <i class="fab fa-discord"></i> <p class="inline-p"><a href="#" onclick="openDiscord()">_demod</a></p>
+                    </div>
+                    <div class="contactBox">
+                        <i class="fab fa-instagram"></i> <p class="inline-p"><a href="#" onclick="openInstagram()">7demod7</a></p>
+                    </div>
+                    <div class="contactBox">
+                        <i class="fa-regular fa-envelope"></i> <p class="inline-p"><a href="mailto:77demod@gmail.com">77demod@gmail.com</a></p>
+                    </div>
+                </div>
+            </section>
             </div>
     </div>
     

@@ -13,6 +13,7 @@ font-family: Michroma;
 
 * {
   box-sizing: border-box;
+  cursor: url('img/cursor/kursor.png') 0 0, auto;
 }
 
 *::-webkit-scrollbar,
@@ -28,13 +29,19 @@ font-family: Michroma;
     color: rgb(255, 243, 227);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  opacity: 0;
   font-family: 'Cutive Mono';
   background-color: #000;
   -webkit-font-smoothing: antialiased;
   display: flex;
   justify-content: center;
   cursor: url('img/cursor/kursor.png') 0 0, auto;
+  transition: opacity 0.5s;
 }
 
 .body-pc {
@@ -524,24 +531,28 @@ i {
 .button-wrapper {
     display: flex;
     margin-right: 150px;
+    color: rgb(255, 243, 227);
 }
 
 .button-wrapper button {
     font-family: 'Cutive Mono';
     background-color: rgba(0, 0, 0, 0.329);
+    color: rgb(255, 243, 227);
     border: none;
     border-radius: 15px;
     padding: 10px 20px;
     font-size: 16px;
     font-style: bold;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 20vh;
     font-size: xx-large;
     transition: 0.3s ease-in-out;
 }
 
 .button-wrapper button:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Kolor tekstu przy najechaniu: półprzezroczysty czarny */
+    text-shadow: 0 0 10px rgb(204, 68, 0);
+    color: rgb(204, 68, 0);
 }
 
 iframe {
@@ -554,7 +565,17 @@ iframe {
 
 iframe:hover {
   border: 3px solid rgb(204, 68, 0);
-    box-shadow: 0 0 20px rgb(204, 68, 0);
+  box-shadow: 0 0 20px rgb(204, 68, 0);
+}
+
+#progressbar {
+  width: 0%;
+  height: 3px;
+  margin-top: 80px;
+  background-color: rgb(204, 68, 0);
+  box-shadow: 0 0 10px rgb(204, 68, 0);
+  border-radius: 25px;
+  transition: width 0.3s ease;
 }
 
 
@@ -591,9 +612,13 @@ iframe:hover {
   .body-pc p{
     font-size: 30px;
   }
+
+  .button-wrapper {
+    margin-left: -8vh;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   section {
     height: 100vh;
   }
@@ -606,7 +631,49 @@ iframe:hover {
     font-size: 25px;
     text-shadow: 0 0 10px rgb(255, 243, 227);
   }
-  .body-pc {
+  /*.body-pc {
     display: none;
+  } */
+
+  .button-wrapper {
+    margin-left: -8vh;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .body-pc h1 {
+    font-size: 55px;
+  }
+
+  .body-pc p {
+    font-size: 15px;
+  }
+
+  .button-wrapper {
+    margin-left: 15vh;
+  }
+
+  .button-wrapper button {
+    font-size: 10px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .body-pc h1 {
+    font-size: 55px;
+  }
+
+  .body-pc p {
+    font-size: 15px;
+  }
+
+  .button-wrapper {
+    margin-left: 20vh;
+  }
+
+  .button-wrapper button {
+    font-size: 10px;
+    margin-left: 0;
   }
 }
