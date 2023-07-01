@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -130,11 +130,52 @@
                     <p class="inline-p">Sklep 3D: <a href="https://sketchfab.com/demod77">sketchfab.com/demod77</a></p><br>
                 </div>
             </section>
+            <section id="partnership" class="partnership">
+                <div class="heading">
+                    <h2>Współprace</h2>
+                    <p>Ludzie oraz serwery, z którymi aktualnie współpracuję oraz z którymi współpracowałem.</p>
+                </div>
+                <div class="sectionWrapper">
+
+                    <h4>Serwery:</h4>
+
+                    <p class="inline-p"><a onclick="transitionToPage('https://cocorp.pl')">CoCoRP (aktualnie)</a></p>
+                    <p class="inline-p"><a onclick="braklinku()">77RP</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://discord.com/invite/exilerp')">ExileRP</a></p>
+                    <p class="inline-p">i wiele innych...</p>
+
+                    <h4>Streamerzy:</h4>
+
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/xgrendy/')">Grendy</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/slodkibudyn/')">Budyń</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/xmerghani/')">MRGH.</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/boxdel/')">BOXDEL.</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/yungmaciasww/')">yungmaciasww</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/simply_bary/')">Simply_Bary</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/rafonixofficial/')">Rafonix</a></p>
+                    <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/xadamz/')">AdamZ</a></p>
+
+                    <br><br><br>
+                    
+                </div>
+            </section>
             </div>
     </div>
     
     <video class="background-video" autoplay loop muted>
         <source src="img/video.mp4" type="video/mp4">
     </video>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.background-video');
+        const preloader = document.getElementById('preloader');
+
+        video.addEventListener('loadeddata', function() {
+          // Gdy video jest załadowane, ukryj preloader
+          preloader.style.display = 'none';
+        });
+      });
+    </script>
 </body>
 </html>

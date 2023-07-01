@@ -128,11 +128,76 @@
                     </div>
                 </div>
             </section>
+            <section id="partnership" class="partnership">
+                <div class="heading">
+                    <h2>Współprace</h2>
+                </div>
+                <div class="sectionWrapper">
+                    <div class="sectionWrapper">
+
+                        <h4>Śpiew:</h4>
+    
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/basedboydmarc/')">BASEDBOYDMARC</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/okekelvsn/')">Okekel</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/alienlingo/')">Lingo</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/simplyantos/')">Antoś</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/largefee/')">FEE</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/tonietonji/')">Tonji</a></p>
+    
+                        <h4>Produkcja (PL):</h4>
+    
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/s3twotay/')">S3</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/mstccmvne/')">MSTCCMVNE</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/amarajda/')">AmArajda</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/skibovicz/')">Skibovicz</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/cavz00/')">cavz00</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/goodgriefkala/')">KALA</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/curesdead/')">curesdead</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/prod.fxst/')">FXST</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/_whokilledalice/')">whokilledalice</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/coobiak0/')">coobiak0</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/slayed6mt/')">slayed</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/hugepat/')">HUGEPAT</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/nerohustlekid/')">77nero</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/simplyantos/')">Antoś</a></p>
+                        <p class="inline-p">i wiele innych...</p>
+
+                        <h4>Produkcja (rest of world):</h4>
+    
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/xrazycoolin/')">xrazycoolin</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/prodbyferdi/')">FERDI</a></p>
+                        <p class="inline-p"><a onclick="braklinku()">Bekzmo</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/prodinuya/')">INUYA</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/ryfvr/')">RYFVR</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/theillka/')">iLLKA</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/proddvra/')">dvra</a></p>
+                        <p class="inline-p"><a onclick="transitionToPage('https://www.instagram.com/fukwit_kilo/')">fukwit_kilo</a></p>
+                        <p class="inline-p">i wiele innych...</p><br><br><br><br><br><br>
+                        
+                    </div>
+                </div>
+            </section>
             </div>
     </div>
+    
+    <video class="background-video" autoplay loop="true" muted>
+        <source src="img/video.mp4" type="video/mp4">
+    </video>   
     
     <video class="background-video" autoplay loop muted>
         <source src="img/video.mp4" type="video/mp4">
     </video>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.background-video');
+        const preloader = document.getElementById('preloader');
+
+        video.addEventListener('loadeddata', function() {
+          // Gdy video jest załadowane, ukryj preloader
+          preloader.style.display = 'none';
+        });
+      });
+    </script>      
 </body>
 </html>

@@ -116,3 +116,40 @@ window.addEventListener('scroll', function() {
     var scrollRatio = (scrollTop / (scrollHeight - window.innerHeight)) * 100;
     document.querySelector('#progressbar').style.width = scrollRatio + '%';
   });
+
+
+
+
+
+  
+
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('video');
+    const preloader = document.getElementById('preloader');
+  
+    video.addEventListener('loadeddata', function() {
+      // Gdy video jest załadowane, ukryj preloader
+      preloader.style.display = 'none';
+    });
+});
+
+
+
+function braklinku() {
+    alert('Brak aktualnego linku do strony.');
+}
+
+
+
+function changeLanguage(lang) {
+    document.documentElement.setAttribute('lang', lang);
+  }
+
+function changeLanguage(lang) {
+    document.documentElement.setAttribute('lang', lang);
+    const elements = document.querySelectorAll('[data-en]');
+    elements.forEach(element => {
+      element.textContent = element.getAttribute(`data-${lang}`);
+    });
+}
+    

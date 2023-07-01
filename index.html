@@ -15,39 +15,6 @@
     <title id="custom-title">demod.space</title>
 </head>
 <body> 
-    <!--<div class="body-mobile">   
-        <section class="main">
-            <div class="container-mobile">
-                <img src="img/demod_space_mini.png" alt="Logo">
-                <h1>demod.space</h1>
-                <p>strona nie jest obsługiwana na telefonach,<br><br>możesz wyświetlić zawartość strony na urządzeniach o szerokości co najmniej 768px,<br></p>
-            </div>
-            <div class="navbar">
-                <div class="nav-content">
-                    <div class="navbar-left">
-                        <span onclick="openNav()">&#9776;</span>
-                    </div>
-                    <div class="navbar-center">
-                        <a href="index.html"><img src="img/demod_space_mini.png" alt="Logo"></a>
-                    </div>
-                    <div class="navbar-right">
-                        <a href="#" onclick="openDiscord()"><i class="fab fa-discord"></i></a>                      
-                        <a href="#" onclick="openInstagram()"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div> 
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                    <a onclick="transitionToPage('index.html')">Strona główna</a>
-                    <a href="#about">O mnie</a>
-                    <a href="#music">Lista utworów</a>
-                    <a href="#contact">Kontakt</a>
-                </div>
-            </div>
-        </section>
-    </div>-->
-
     <div class="body-pc">
         <div class="navbar">
             <div class="nav-content">
@@ -109,5 +76,17 @@
     <video class="background-video" autoplay loop muted>
         <source src="img/video.mp4" type="video/mp4">
     </video>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.background-video');
+        const preloader = document.getElementById('preloader');
+
+        video.addEventListener('loadeddata', function() {
+          // Gdy video jest załadowane, ukryj preloader
+          preloader.style.display = 'none';
+        });
+      });
+    </script>
 </body>
 </html>
